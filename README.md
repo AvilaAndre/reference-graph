@@ -4,8 +4,8 @@
 
 - [AnyStyle.io](https://anystyle.io/) parser to retrieve references from pdf files.
 - Python3
-- Zotero
-- Obsidian
+- [Zotero](https://www.zotero.org/)
+- [Obsidian](https://obsidian.md/)
 
 ## Usage
 

@@ -41,7 +41,7 @@ python3 build_graph.py
 
 Which will read the references and format them in a common format. 
 
->> This is hardcoded and references are not always well formatted so the results are not completely right.
+> This is hardcoded and references are not always well formatted so the results are not completely right.
 
 Finally placing them in `Markdown` files inside the folder `graph` with the name of the document they were referenced by and in `Obsidian` links.
 
@@ -55,3 +55,7 @@ python3 build_graph.py | sort | uniq -c | sort -h
 
 Open the folder `graph` as a vault in `Obsidian` and check the graph!
 
+![obsidian graph](imgs/obsidiangraph.png)
+
+> The white nodes are the documents in the Zotero storage folder.
+> Obsidian has the option of enabling arrows to see which node referenced which.

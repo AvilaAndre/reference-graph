@@ -11,4 +11,5 @@ prepare:
 
 run:
 	bash extract_refs.sh $(STORAGE_PATH)
-	python3 build_graph.py | sort | uniq -c | sort -h
+	python3 build_graph.py
+	cat refs.txt | sort | uniq -c | sort -h

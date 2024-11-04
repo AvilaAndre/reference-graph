@@ -54,12 +54,18 @@ def main():
                     filter(lambda x: x is not None, [
                         author_name, date, title]))
 
-                print(f"{refname}")
                 ref_graph[filename].append(refname)
 
     for key, value in ref_graph.items():
-        with open(f"graph/{key}.md", "w") as new_file:
-            new_file.write("\n".join(map(lambda x: f"[[{x}]]", value)))
+        with open(f"graph/{key.lower()}.md", "w") as new_file:
+            new_file.write("\n".join(map(lambda x: f"[[{x.lower()}]]", value)))
+
+    with open("refs.txt", "w") as refs_file:
+        for key, value in ref_graph.items():
+            refs_file.write(key.lower() + "\n")
+            refs_file.write("\n".join(map(lambda x: f"{x.lower()}", value)))
+            if len(value) > 0:
+                refs_file.write("\n")
 
 
 if __name__ == "__main__":

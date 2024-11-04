@@ -2,10 +2,10 @@
 
 ## Requirements
 
-This requires the [anystyle.io](https://anystyle.io/) parser to retrieve references from pdf files.
-Python3
-Zotero
-Obsidian
+- [AnyStyle.io](https://anystyle.io/) parser to retrieve references from pdf files.
+- Python3
+- [Zotero](https://www.zotero.org/)
+- [Obsidian](https://obsidian.md/)
 
 ## Usage
 
@@ -58,4 +58,5 @@ Open the folder `graph` as a vault in `Obsidian` and check the graph!
 ![obsidian graph](imgs/obsidiangraph.png)
 
 > The white nodes are the documents in the Zotero storage folder.
+
 > Obsidian has the option of enabling arrows to see which node referenced which.
